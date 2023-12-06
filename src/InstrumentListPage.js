@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {NavLink} from "react-router-dom";
 
 export function InstrumentListPage() {
 
@@ -21,6 +22,7 @@ export function InstrumentListPage() {
         <div>
             <h2>Hangszerek</h2>
             {instruments.map((instrument) => (
+                <NavLink key={instrument.id} to={"/hangszer/" + instrument.id}>
                 <div className='card col-sm-3 d-inline-block m-1 p-2'>
                     <h6 className='text-muted'>{instrument.brand}</h6>
                     <h5 className='text-muted'>{instrument.name}</h5>
@@ -34,6 +36,7 @@ export function InstrumentListPage() {
                         />
                     </div>
                 </div>
+                </NavLink>
             ))}
         </div>
     )}
