@@ -27,27 +27,27 @@ return (
         }}
             >
             <div className='form-group row pb-3'>
-                <label className='col-sm-3 col-form-label'> Név: </label>
+                <label htmlFor="name" className='col-sm-3 col-form-label'> Név: </label>
                     <div>
-                        <input type="text" name="name" className="form-control" />
+                        <input type="text" id="name" name="name" className="form-control" autoComplete='name' />
                     </div>
             </div>
             <div className='form-group row pb-3'>
-                <label className='col-sm-3 col-form-label'> Ár: </label>
+                <label htmlFor="price" className='col-sm-3 col-form-label'> Ár: </label>
                     <div>
-                        <input type="number" name="price" className="form-control" />
+                        <input type="number" id="price" name="price" className="form-control" autoComplete='price' />
                     </div>
             </div>
             <div className='form-group row pb-3'>
-                <label className='col-sm-3 col-form-label'> Darabszám: </label>
+                <label htmlFor="quantity" className='col-sm-3 col-form-label'> Darabszám: </label>
                     <div>
-                        <input type="number" name="quantity" className="form-control" />
+                        <input type="number" id="quantity" name="quantity" className="form-control" autoComplete='quantity' />
                     </div>
             </div>
             <div className='form-group row pb-3'>
-                <label className='col-sm-3 col-form-label'> Kép URL: </label>
+                <label htmlFor="imageURL" className='col-sm-3 col-form-label'> Kép URL: </label>
                     <div>
-                        <input type="text" name="imageURL" className="form-control" />
+                        <input type="text" id="imageURL" name="imageURL" className="form-control" autoComplete='imageURL' />
                     </div>
             </div>
             <button type="submit" className='btn btn-success'>Küldés</button>
